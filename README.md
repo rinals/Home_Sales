@@ -7,6 +7,7 @@ This project analyzes home sales data using PySpark SQL to uncover trends and ke
 ## Project Requirements
 
 The assignment involved the following tasks:
+
 1. **Load and Explore the Data**: Load the data from a CSV file, examine its structure, and create a temporary view.
 2. **Run SQL Queries**: Perform SQL queries to answer key questions related to average home prices, sales data trends, and filters based on attributes like bedrooms, bathrooms, view ratings, and square footage.
 3. **Optimize Query Performance**:
@@ -16,7 +17,7 @@ The assignment involved the following tasks:
 
 ## Key Steps
 
-1. **Data Loading**: 
+1. **Data Loading**:
    - Load the `home_sales_revised.csv` file from an AWS S3 bucket into a PySpark DataFrame.
    - Create a temporary view, `home_sales`, to facilitate SQL queries.
 
@@ -30,7 +31,7 @@ The assignment involved the following tasks:
 3. **Caching and Partitioning**:
    - **Cache the Table**: Cache the `home_sales` table in memory to optimize subsequent queries.
    - **Partition the Data**: Save the data in Parquet format partitioned by the `date_built` column to improve data access and management.
-   
+
 4. **Performance Comparison**:
    - Measure query runtimes on cached, uncached, and partitioned data to evaluate performance differences.
 
